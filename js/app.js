@@ -13,68 +13,73 @@ function removeTransition(e){
 	this.classList.remove('playing');
 }
 
-function checkClick(e){
-	console.log(e[0]);
-}
 
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
-keys.forEach(function(key){
-	key.addEventListener('click', function(){
-		console.log(key);
-		if(key.id =="clap"){
+keys.forEach(function(c){
+	c.addEventListener('click', function(){
+		if(c.id =="clap"){
 			const audioClap = document.querySelector(`audio[data-key="65"]`);
 			audioClap.currentTime = 0;
 			audioClap.play();
-		}
+			c.classList.add('playing');
+		} else
 
-		if (key.id =="tinn") {
+		if (c.id =="tinn") {
 			const audioTinn = document.querySelector(`audio[data-key="83"]`);
 			audioTinn.currentTime = 0;
 			audioTinn.play();
-		}
+			c.classList.add('playing');
+		} else
 
-		if (key.id =="boom") {
+		if (c.id =="boom") {
 			const audioBoom = document.querySelector(`audio[data-key="68"]`);
 			audioBoom.currentTime = 0;
 			audioBoom.play();
-		}
+			c.classList.add('playing');
+		} else
 
-		if (key.id =="tumm") {
+		if (c.id =="tumm") {
 			const audioTumm = document.querySelector(`audio[data-key="70"]`);
 			audioTumm.currentTime = 0;
-			audioTumm.play();	
-		}
-
-		if (key.id =="tomm") {
+			audioTumm.play();
+			c.classList.add('playing');	
+		} else
+ 
+		if (c.id =="tomm") {
 			const audioTomm = document.querySelector(`audio[data-key="71"]`);
 			audioTomm.currentTime = 0;
 			audioTomm.play();
-		}
+			c.classList.add('playing');
+		} else
 
-		if (key.id =="tumm2") {
+		if (c.id =="tumm2") {
 			const audioTumm2 = document.querySelector(`audio[data-key="72"]`);
 			audioTumm2.currentTime = 0;
 			audioTumm2.play();
-		}
+			c.classList.add('playing');
+		} else
 
-		if (key.id=="dee") {
+		if (c.id=="dee") {
 			const audioDee = document.querySelector(`audio[data-key="74"]`);
 			audioDee.currentTime = 0;
 			audioDee.play();
-		}
+			c.classList.add('playing');
+		} else
 
-		if (key.id=="tom") {
+		if (c.id=="tom") {
 			const audioTom = document.querySelector(`audio[data-key="75"]`);
 			audioTom.currentTime = 0;
 			audioTom.play();
-		}
+			c.classList.add('playing');
+		} else
 
-		if (key.id="tum") {
+		if (c.id=="tum") {
 			const audioTum = document.querySelector(`audio[data-key="76"]`);
 			audioTum.currentTime = 0;
 			audioTum.play();
+			c.classList.add('playing');
 		}
 	});
 });
@@ -82,8 +87,6 @@ keys.forEach(function(key){
 window.addEventListener('keydown', playsound);
 
 
-
-//touchs
 
 
 
