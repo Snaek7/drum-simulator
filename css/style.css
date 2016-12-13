@@ -17,6 +17,7 @@ h3 {
 h6 {
 	margin: 0px;
 	margin-left: 5px;
+	margin-bottom: 10px;
 }
 
 .keys {
@@ -71,4 +72,5 @@ kbd {
 p {
 	padding: 20px;
 	padding-bottom: 0px;
+	margin-bottom: 6px;
 }
