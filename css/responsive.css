@@ -11,4 +11,10 @@
 	.what {
 		margin-bottom: 20px;
 	}
+
+	.key {
+		width: initial;
+		font-size: 1em;
+		
+	}
 }
