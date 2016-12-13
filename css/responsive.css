@@ -1,0 +1,10 @@
+@media screen and (min-width: 400px) and (max-width: 900px){
+
+	h1 {
+		font-size: 3em;
+	}
+	.keys {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
